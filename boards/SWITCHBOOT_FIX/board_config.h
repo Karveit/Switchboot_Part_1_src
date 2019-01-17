@@ -12,25 +12,25 @@
 #define USB_VID 0x239A
 #define USB_PID 0x001E
 
-#define STRAP_HOLD_TIME 100
+#define STRAP_HOLD_TIME 5000
 
 //#define JOYCON_PIN_ONLY 1 //Comment out this and uncomment BOTH_PINS below to enable both joycon & vol+ straps
 #define BOTH_PINS 1 //Comment out this and uncomment JOYCON_PIN_ONLY to enable joycon strap only (for dual boot?)
 #define LED_PIN PIN_PA10
-#define JOYCON_PIN PIN_PA09
-#define VOLUP_PIN PIN_PA02
+#define JOYCON_PIN PIN_PA07
+#define VOLUP_PIN PIN_PA08
 //#define LED_TX_PIN PIN_PA27
 //#define LED_RX_PIN PIN_PB03
 
 #ifdef BOTH_PINS
-#define STRAP_VERSION " (JOYCON -ON)(VOL UP -ON) RCM BOOT. RCM-X86"
+#define STRAP_VERSION "Joycon and Vol+ Straps. Permanent boot into CFW. Hold RESET on device during power-on for OFW boot"
 #endif
 
 #ifdef JOYCON_PIN_ONLY
-#define STRAP_VERSION " (JOYCON -ON)(VOL UP -OFF) DUAL BOOT. RCM-X86"
+#define STRAP_VERSION "Joycon Strap ONLY. Dual-boot mode."
 #endif
 
-//#define BOARD_RGBLED_CLOCK_PIN            PIN_PA01
-//#define BOARD_RGBLED_DATA_PIN             PIN_PA00
+#define BOARD_RGBLED_CLOCK_PIN            PIN_PA01
+#define BOARD_RGBLED_DATA_PIN             PIN_PA00
 
 #endif

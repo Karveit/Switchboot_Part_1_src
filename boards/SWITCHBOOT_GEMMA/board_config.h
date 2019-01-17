@@ -14,17 +14,17 @@
 
 #define STRAP_HOLD_TIME 100
 
-#define JOYCON_PIN_ONLY 1 //Comment out this and uncomment BOTH_PINS below to enable both joycon & vol+ straps
-//#define BOTH_PINS 1 //Comment out this and uncomment JOYCON_PIN_ONLY to enable joycon strap only (for dual boot?)
+//#define JOYCON_PIN_ONLY 1 //Comment out this and uncomment BOTH_PINS below to enable both joycon & vol+ straps
+#define BOTH_PINS 1 //Comment out this and uncomment JOYCON_PIN_ONLY to enable joycon strap only (for dual boot?)
 #define JOYCON_PIN PIN_PA05
 #define VOLUP_PIN PIN_PA04
 
 #ifdef BOTH_PINS
-#define STRAP_VERSION "Joycon and Vol+ Straps. Permanent boot into CFW. Hold RESET on device during power-on for OFW boot"
+#define STRAP_VERSION " (JOYCON -ON)(VOL UP -ON) RCM BOOT. GEMMA M0"
 #endif
 
 #ifdef JOYCON_PIN_ONLY
-#define STRAP_VERSION "Joycon Strap ONLY. Dual-boot mode."
+#define STRAP_VERSION " (JOYCON -ON)(VOL UP -OFF) DUAL BOOT. GEMMA M0"
 #endif
 
 #define LED_PIN PIN_PA23

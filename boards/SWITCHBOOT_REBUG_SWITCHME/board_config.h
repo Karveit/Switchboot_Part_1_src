@@ -16,21 +16,22 @@
 
 //#define JOYCON_PIN_ONLY 1 //Comment out this and uncomment BOTH_PINS below to enable both joycon & vol+ straps
 #define BOTH_PINS 1 //Comment out this and uncomment JOYCON_PIN_ONLY to enable joycon strap only (for dual boot?)
+
 #define LED_PIN PIN_PA10
-#define JOYCON_PIN PIN_PA09
-#define VOLUP_PIN PIN_PA02
+#define JOYCON_PIN PIN_PA07
+#define VOLUP_PIN PIN_PA08
 //#define LED_TX_PIN PIN_PA27
 //#define LED_RX_PIN PIN_PB03
 
 #ifdef BOTH_PINS
-#define STRAP_VERSION " (JOYCON -ON)(VOL UP -ON) RCM BOOT. RCM-X86"
+#define STRAP_VERSION " (JOYCON -ON)(VOL UP -ON) RCM BOOT. REBUG SWITCHME"
 #endif
 
 #ifdef JOYCON_PIN_ONLY
-#define STRAP_VERSION " (JOYCON -ON)(VOL UP -OFF) DUAL BOOT. RCM-X86"
+#define STRAP_VERSION " (JOYCON -ON)(VOL UP -OFF) DUAL BOOT. REBUG SWITCHME"
 #endif
 
-//#define BOARD_RGBLED_CLOCK_PIN            PIN_PA01
-//#define BOARD_RGBLED_DATA_PIN             PIN_PA00
+#define BOARD_RGBLED_CLOCK_PIN            PIN_PA01
+#define BOARD_RGBLED_DATA_PIN             PIN_PA00
 
 #endif

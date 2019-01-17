@@ -156,9 +156,8 @@ void led_init() {
 void joycon_init() {
 #if defined(JOYCON_PIN_ONLY)
     PINOP(JOYCON_PIN, DIRSET); //Set to output
-	PINOP(VOLUP_PIN, DIRSET);
-	PINOP(VOLUP_PIN, DIRTGL);//Change direction to input to prevent gremlins
-	delay(STRAP_HOLD_TIME); //Value set in board_config.h
+	//PINOP(VOLUP_PIN, DIRSET);
+	delay(STRAP_HOLD_TIME);
 	PINOP(JOYCON_PIN, DIRTGL); //Change direction to input to prevent gremlins
 	//PINOP(VOLUP_PIN, DIRTGL);
 #endif
