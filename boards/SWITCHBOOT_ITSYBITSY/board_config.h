@@ -14,10 +14,10 @@
 
 #define STRAP_HOLD_TIME 100
 
-//#define JOYCON_PIN_ONLY 1 //Comment out this and uncomment BOTH_PINS below to enable both joycon & vol+ straps
-#define BOTH_PINS 1 //Comment out this and uncomment JOYCON_PIN_ONLY to enable joycon strap only (for dual boot?)
+#define JOYCON_PIN_ONLY 1 //Comment out this and uncomment BOTH_PINS below to enable both joycon & vol+ straps
+//#define BOTH_PINS 1 //Comment out this and uncomment JOYCON_PIN_ONLY to enable joycon strap only (for dual boot?)
 #define JOYCON_PIN PIN_PA07
-#define VOLUP_PIN PIN_PA19
+#define VOLUP_PIN PIN_PA16
 
 
 #ifdef BOTH_PINS
