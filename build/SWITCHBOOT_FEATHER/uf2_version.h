@@ -1,1 +1,0 @@
-#define UF2_VERSION_BASE "189c231"
