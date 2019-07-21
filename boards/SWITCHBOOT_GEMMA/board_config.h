@@ -8,6 +8,7 @@
 #define VOLUME_LABEL "SWITCHBOOT"
 #define INDEX_URL "http://adafru.it/3501"
 #define BOARD_ID "SAMD21E18A-Gemma-v0"
+//#define UF2_NAME "GEMMAM0 UF2" // 7 char, space, extn
 
 #define USB_VID 0x239A
 #define USB_PID 0x001C

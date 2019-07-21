@@ -6,6 +6,7 @@
 #define VOLUME_LABEL "SWITCHBOOT"
 #define INDEX_URL "http://adafru.it/3403"
 #define BOARD_ID "SAMD21G18A-Feather-M0-Express-v0"
+//#define UF2_NAME "FEATHER UF2" // 7 char, space, extn
 
 #define USB_VID 0x239A
 #define USB_PID 0x001B

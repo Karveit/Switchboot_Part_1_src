@@ -77,7 +77,11 @@ static const struct TextFile info[] = {
 #if USE_INDEX_HTM
     {.name = "INDEX   HTM", .content = indexFile},
 #endif
+#ifdef UF2_NAME
+    {.name = UF2_NAME},
+#else
     {.name = "CURRENT UF2"},
+#endif
 };
 #define NUM_INFO (sizeof(info) / sizeof(info[0]))
 
